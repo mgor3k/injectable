@@ -11,6 +11,12 @@
 		BFB7059E2576C3CD003C6C77 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB7059D2576C3CD003C6C77 /* ContentView.swift */; };
 		BFB705A02576C3D1003C6C77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB7059F2576C3D1003C6C77 /* Assets.xcassets */; };
 		BFB705A32576C3D1003C6C77 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB705A22576C3D1003C6C77 /* Preview Assets.xcassets */; };
+		BFB705AE2576C40B003C6C77 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB705AD2576C40B003C6C77 /* Inject.swift */; };
+		BFB705B22576C429003C6C77 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB705B12576C429003C6C77 /* Injectable.swift */; };
+		BFB705B52576C43B003C6C77 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB705B42576C43B003C6C77 /* Resolver.swift */; };
+		BFB705B92576C46F003C6C77 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB705B82576C46F003C6C77 /* NetworkService.swift */; };
+		BFB705BD2576C514003C6C77 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB705BC2576C514003C6C77 /* DependencyManager.swift */; };
+		BFB705C02576C98C003C6C77 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB705BF2576C98C003C6C77 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		BFB7059F2576C3D1003C6C77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFB705A22576C3D1003C6C77 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BFB705A42576C3D2003C6C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFB705AD2576C40B003C6C77 /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
+		BFB705B12576C429003C6C77 /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
+		BFB705B42576C43B003C6C77 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		BFB705B82576C46F003C6C77 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BFB705BC2576C514003C6C77 /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
+		BFB705BF2576C98C003C6C77 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +64,12 @@
 		BFB7059A2576C3CD003C6C77 /* Injectable */ = {
 			isa = PBXGroup;
 			children = (
-				BFB7059B2576C3CD003C6C77 /* InjectableApp.swift */,
+				BFB705C22576CA55003C6C77 /* App */,
+				BFB705AC2576C400003C6C77 /* Injectable */,
+				BFB705B72576C460003C6C77 /* Dependencies */,
+				BFB705C32576CA5E003C6C77 /* Resources */,
+				BFB705BF2576C98C003C6C77 /* ViewModel.swift */,
 				BFB7059D2576C3CD003C6C77 /* ContentView.swift */,
-				BFB7059F2576C3D1003C6C77 /* Assets.xcassets */,
-				BFB705A42576C3D2003C6C77 /* Info.plist */,
 				BFB705A12576C3D1003C6C77 /* Preview Content */,
 			);
 			path = Injectable;
@@ -67,6 +81,42 @@
 				BFB705A22576C3D1003C6C77 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFB705AC2576C400003C6C77 /* Injectable */ = {
+			isa = PBXGroup;
+			children = (
+				BFB705AD2576C40B003C6C77 /* Inject.swift */,
+				BFB705B42576C43B003C6C77 /* Resolver.swift */,
+				BFB705B12576C429003C6C77 /* Injectable.swift */,
+			);
+			path = Injectable;
+			sourceTree = "<group>";
+		};
+		BFB705B72576C460003C6C77 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				BFB705B82576C46F003C6C77 /* NetworkService.swift */,
+				BFB705BC2576C514003C6C77 /* DependencyManager.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		BFB705C22576CA55003C6C77 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BFB7059B2576C3CD003C6C77 /* InjectableApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BFB705C32576CA5E003C6C77 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFB7059F2576C3D1003C6C77 /* Assets.xcassets */,
+				BFB705A42576C3D2003C6C77 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB705B52576C43B003C6C77 /* Resolver.swift in Sources */,
+				BFB705B22576C429003C6C77 /* Injectable.swift in Sources */,
 				BFB7059E2576C3CD003C6C77 /* ContentView.swift in Sources */,
 				BFB7059C2576C3CD003C6C77 /* InjectableApp.swift in Sources */,
+				BFB705B92576C46F003C6C77 /* NetworkService.swift in Sources */,
+				BFB705AE2576C40B003C6C77 /* Inject.swift in Sources */,
+				BFB705C02576C98C003C6C77 /* ViewModel.swift in Sources */,
+				BFB705BD2576C514003C6C77 /* DependencyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Injectable/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Injectable/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Injectable/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,7 +347,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Injectable/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Injectable/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Injectable/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
